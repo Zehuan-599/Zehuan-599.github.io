@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Korea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: hsl(0, 80%, 40%);
+            --secondary-color: hsl(220, 60%, 45%);
+            --text-color: rgba(33, 33, 33, 0.95);
+            --background-color: rgb(250, 250, 250);
+            --section-bg: rgb(245, 245, 245);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 2rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .left {
+            position: sticky;
+            top: 2rem;
+            align-self: start;
+        }
+
+        .aside {
+            background-color: var(--section-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .aside a {
+            display: block;
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .aside a:hover {
+            color: var(--primary-color);
+        }
+
+        .aside a:active {
+            color: hsl(0, 70%, 30%);
+        }
+
+        .aside a:visited {
+            color: hsl(220, 40%, 40%);
+        }
+
+        .right {
+            max-width: 800px;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        p {
+            max-width: 60ch;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .detail, .area {
+            background-color: var(--section-bg);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .map {
+            margin: 2rem 0;
+        }
+
+        .popu {
+            margin: 2rem 0;
+        }
+
+        .line {
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .links {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-block {
+            margin: 1rem 0;
+        }
+
+        .info-block div {
+            margin-bottom: 0.5rem;
+        }
+
+        .audio-sample {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <aside class="aside">
+                <a href="#section1">Introduction</a>
+                <a href="#section2">Map</a>
+                <a href="#section3">Background</a>
+                <a href="#section4">Population</a>
+            </aside>
+        </div>
+
+        <div class="right">
+            <section id="section1" class="section">
+                <h1>Introduction</h1>
+                <div>
+                    <p>Three horizontal bands of blue (top), red (triple width), and blue; the red band is edged in white; on the hoist side of the red band is a white disk with a red five-pointed star; the broad red band symbolizes revolutionary traditions; the narrow white bands stand for purity, strength, and dignity; the blue bands signify sovereignty, peace, and friendship; the red star represents socialism</p>
+                    <img src="2.jpg" alt="Area Flag">
+                </div>
+            </section>
+
+            <section id="section2">
+                <h1>Map</h1>
+                <div>
+                    <p>North Korea map showing major cities as well as parts of surrounding countries and water bodies.</p>
+                    <img src="3.jpg" alt="Physical Map of North Korea">
+
+                    <div class="info-block">
+                        <div class="title">Location</div>
+                        <div>Eastern Asia, northern half of the Korean Peninsula bordering the Korea Bay and the Sea of Japan, between China and South Korea</div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="title">Geographic coordinates</div>
+                        <div>40 00 N, 127 00 E</div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="title">Map references</div>
+                        <div>Asia</div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="title">Area</div>
+                        <div>total: 120,538 sq km</div>
+                        <div>land: 120,408 sq km</div>
+                        <div>water: 130 sq km</div>
+                        <div>comparison ranking: total 99</div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="title">Area comparative</div>
+                        <div>slightly larger than Virginia; slightly smaller than Mississippi</div>
+                    </div>
+
+                    <div class="map">
+                        <img src="1.jpg" alt="Area comparison map">
+                    </div>
+
+                    <div class="detail">
+                        <div class="title">Land boundaries</div>
+                        <div>total: 1,607 km</div>
+                        <div>border countries (3): China 1,352 km; South Korea 237 km; Russia 18 km</div>
+
+                        <div class="title">Coastline</div>
+                        <div>2,495 km</div>
+
+                        <div class="title">Maritime claims</div>
+                        <div>territorial sea: 12 nm</div>
+                        <div>exclusive economic zone: 200 nm</div>
+                        <div>note: military boundary line 50 nm in the Sea of Japan and the exclusive economic zone limit in the Yellow Sea where all foreign vessels and aircraft without permission are banned</div>
+                        
+                        <div class="title">Climate</div>
+                        <div>temperate, with rainfall concentrated in summer; long, bitter winters</div>
+                    
+                        <div class="title">Terrain</div>
+                        <div>mostly hills and mountains separated by deep, narrow valleys; wide coastal plains in west, discontinuous in east</div>
+                    </div>
+
+                    <div class="area">
+                        <div class="title">Elevation</div>
+                        <div>highest point: Paektu-san 2,744 m</div>
+                        <div>lowest point: Sea of Japan 0 m</div>
+                        <div>mean elevation: 600 m</div>
+
+                        <div class="title">Natural resources</div>
+                        <div>coal, iron ore, limestone, magnesite, graphite, copper, zinc, lead, precious metals, hydropower</div>
+
+                        <div class="title">Geography note</div>
+                        <div>strategic location bordering China, South Korea, and Russia; mountainous interior is isolated and sparsely populated</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3">
+                <h1>Background</h1>
+                <div>
+                    <p>The first recorded kingdom (Choson) on the Korean Peninsula dates from approximately 2300 B.C. Over the subsequent centuries, three main kingdoms -- Kogoryo, Paekche, and Silla -- were established on the Peninsula. By the 5th century A.D., Kogoryo emerged as the most powerful, with control over much of the Peninsula and part of Manchuria (modern-day northeast China). However, Silla allied with the Chinese to create the first unified Korean state in 688. Following the collapse of Silla in the 9th century, Korea was unified under the Koryo (Goryeo; 918-1392) and the Chosen (Joseon; 1392-1910) dynasties. Korea became the object of intense imperialistic rivalry among the Chinese (its traditional benefactor), Japanese, and Russian empires in the latter half of the 19th and early 20th centuries. After the Sino-Japanese War (1894-95) and the Russo-Japanese War (1904-05), Korea was occupied by Imperial Japan. In 1910, Japan formally annexed the entire peninsula. After World War II, the northern half came under Soviet-sponsored communist control.</p>
+
+                    <p>In 1948, North Korea (formally known as the Democratic People's Republic of Korea or DPRK) was founded under President KIM Il Sung, who consolidated power and cemented autocratic one-party rule under the Korean Worker's Party (KWP). North Korea failed to conquer UN-backed South Korea (formally the Republic of Korea or ROK) during the Korean War (1950-53), after which a demilitarized zone separated the two Koreas. KIM's authoritarian rule included tight control over North Korean citizens and the demonization of the US as the central threat to North Korea's political and social system. In addition, he molded the country's economic, military, and political policies around the core objective of unifying Korea under Pyongyang's control. North Korea also declared a central ideology of juche ("self-reliance") as a check against outside influence, while continuing to rely heavily on China and the Soviet Union for economic support. KIM Il Sung's son, KIM Jong Il, was officially designated as his father's successor in 1980, and he assumed a growing political and managerial role until the elder KIM's death in 1994. Under KIM Jong Il's reign, North Korea continued developing nuclear weapons and ballistic missiles. KIM Jong Un was publicly unveiled as his father's successor in 2010. Following KIM Jong Il's death in 2011, KIM Jong Un quickly assumed power and has since occupied the regime's highest political and military posts.</p>
+
+                    <p>After the end of Soviet aid in 1991, North Korea faced serious economic setbacks that exacerbated decades of economic mismanagement and resource misallocation. Since the mid-1990s, North Korea has faced chronic food shortages and economic stagnation. In recent years, the North's domestic agricultural production has improved but still falls far short of producing sufficient food for its population. Starting in 2002, North Korea began to tolerate semi-private markets but has made few other efforts to meet its goal of improving the overall standard of living. New economic development plans in the 2010s failed to meet government-mandated goals for key industrial sectors, food production, or overall economic performance. At the onset of the COVID-19 pandemic in 2020, North Korea instituted a nationwide lockdown that severely restricted its economy and international engagement. Since then, KIM has repeatedly expressed concerns with the regime's economic failures and food problems, but in 2021, he vowed to continue "self-reliant" policies and has reinvigorated his pursuit of greater regime control of the economy.</p>
+
+                    <p>As of 2024, despite slowly renewing cross-border trade with China, North Korea remained one of the world's most isolated countries and one of Asia's poorest. In 2024, Pyongyang announced it was ending all economic cooperation with South Korea. The move followed earlier proclamations that it was scrapping a 2018 military pact with South Korea to de-escalate tensions along their militarized border, abandoning the country’s decades-long pursuit of peaceful unification with South Korea, and designating the South as North Korea’s “principal enemy.”</p>
+                </div>
+            </section>
+
+            <section id="section4">
+                <h1>Population</h1>
+                <div class="detail">
+                    <div>total: 26,298,666</div>
+                    <div>male: 12,828,269</div>
+                    <div>female: 13,470,397 (2024 est.)</div>
+                    <div>comparison rankings: female 54; male 56; total 56</div>
+                    <div>noun: Korean(s)</div>
+                </div>
+
+                <div class="info-block">
+                    <div class="title">Ethnic groups</div>
+                    <div>racially homogeneous; there is a small Chinese community and a few ethnic Japanese</div>
+                </div>
+
+                <div class="detail">
+                    <div class="title">Languages</div>
+                    <div>Korean</div>
+                    <div>major-language sample(s): 월드 팩트북, 필수적인 기본 정보 제공처 (Korean)</div>
+                    <audio controls>
+                        <source src="Korean.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div>The World Factbook, the indispensable source for basic information.</div>
+                </div>
+
+                <div class="info-block">
+                    <div class="title">Religions</div>
+                    <div>traditionally Buddhist and Confucian, some Christian and syncretic Chondogyo (Religion of the Heavenly Way)</div>
+                    <div>note: autonomous religious activities now almost nonexistent; government-sponsored religious groups exist to provide illusion of religious freedom</div>
+                <div class="popu">
+                    <div class="title">Age structure</div>
+                        <div>0-14 years: 19.9% (male 2,673,822/female 2,548,775)</div>
+                        <div>15-64 years: 68.9% (male 9,054,771/female 9,066,447)</div>
+                        <div>65 years and over: 11.2% (male 1,099,676/female 1,855,175)</div>
+                    <img src="4.png" alt="Population pyramid">
+                </div>
+            </section>
+
+            <footer class="links">
+                <a href="https://en.wikipedia.org/wiki/North_Korea" target="_blank">Wikipedia - North Korea</a>
+                <a href="https://www.theguardian.com/world/north-korea" target="_blank">The Guardian - North Korea News</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
