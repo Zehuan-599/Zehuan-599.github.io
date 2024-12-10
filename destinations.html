@@ -3,509 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinations - Explore the World</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        .destinations-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .filter-bar {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .search-box {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-        }
-        .search-box input {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-        .search-box i {
-            padding: 10px;
-            font-size: 18px;
-        }
-        .filter-options {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-        .filter-options select {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 200px;
-        }
-        .featured-destinations {
-            padding: 50px 0;
-        }
-        .destination-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 20px;
-        }
-        .destination-card {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .destination-card:hover {
-            transform: scale(1.05);
-        }
-        .destination-img {
-            background-size: cover;
-            background-position: center;
-            height: 250px;
-            border-radius: 15px 15px 0 0;
-            position: relative;
-        }
-        .destination-overlay {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
-            height: 100%;
-            border-radius: 15px 15px 0 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
-        .price-tag {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: #2575fc;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .duration-tag {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #2575fc;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .destination-info {
-            padding: 20px;
-            background: white;
-            border-radius: 0 0 15px 15px;
-        }
-        .destination-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #ccc;
-        }
-        .destination-header h3 {
-            margin: 0;
-        }
-        .rating {
-            display: flex;
-            align-items: center;
-        }
-        .rating i {
-            font-size: 18px;
-            color: #ffd700;
-            margin-right: 5px;
-        }
-        .rating span {
-            font-size: 16px;
-            color: #666;
-        }
-        .destination-features {
-            margin-top: 20px;
-        }
-        .destination-features span {
-            display: block;
-            margin-bottom: 10px;
-        }
-        .destination-features i {
-            font-size: 18px;
-            margin-right: 10px;
-        }
-        .destination-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 20px;
-            border-top: 1px solid #ccc;
-        }
-        .destination-btn {
-            background: #2575fc;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .destination-btn:hover {
-            background: #6a11cb;
-        }
-        .route-btn {
-            background: none;
-            border: none;
-            padding: 10px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        .route-btn i {
-            font-size: 18px;
-        }
-        .travel-tips {
-            background-color: #f4f4f4;
-            padding: 50px 0;
-            text-align: center;
-        }
-        .hero {
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .cta-btn {
-            background: #2575fc;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .cta-btn:hover {
-            background: #6a11cb;
-        }
-    </style>
+    <title>Top Destinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-top">
-            <div class="contact-info">
-                <span><i class="fas fa-phone"></i> +1 234 567 890</span>
-                <span><i class="fas fa-envelope"></i> info@exploreworld.com</span>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
+    <nav class="navbar">
+        <a href="index.html" >Home</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <aside class="aside">
+                <a href="#section1">Introduction</a>
+                <a href="#section2">City Highlights</a>
+                <a href="#section3">Natural Wonders</a>
+                <a href="#section4">Hidden Gems</a>
+                <a href="#section5">Travel Tips</a>
+            </aside>
         </div>
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="Explore World Logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html" class="active">Destinations</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button class="book-now-btn" onclick="window.location.href='destinations.html'">Book Now</button>
-        </nav>
-    </header>
 
-    <section class="hero destinations-hero">
-        <div class="hero-content">
-            <h1>Discover Your Next Adventure</h1>
-            <p>Explore breathtaking destinations from around the globe</p>
-            <a href="#destinations" class="cta-btn">View Destinations</a>
-        </div>
-    </section>
+        <div class="right">
+            <section id="section1">
+                <h1>Introduction</h1>
+                <p>Discover the most breathtaking destinations across the globe, from vibrant cities to serene natural landscapes.</p>
+                <img src="destination.jfif" alt="Destinations Overview">
+            </section>
 
-    <section class="filter-bar">
-        <div class="search-box">
-            <input type="text" placeholder="Search destinations...">
-            <i class="fas fa-search"></i>
-        </div>
-        <div class="filter-options">
-            <select class="price-filter">
-                <option value="">Price Range</option>
-                <option value="0-1000">$0 - $1,000</option>
-                <option value="1000-2000">$1,000 - $2,000</option>
-                <option value="2000+">$2,000+</option>
-            </select>
-            <select class="duration-filter">
-                <option value="">Duration</option>
-                <option value="1-3">1-3 Days</option>
-                <option value="4-7">4-7 Days</option>
-                <option value="7+">7+ Days</option>
-            </select>
-            <select class="rating-filter">
-                <option value="">Rating</option>
-                <option value="5">5 Stars</option>
-                <option value="4">4+ Stars</option>
-                <option value="3">3+ Stars</option>
-            </select>
-        </div>
-    </section>
+            <section id="section2">
+                <h1>City Highlights</h1>
+                <div class="info-block">
+                    <div><strong>Paris:</strong> Iconic landmarks like the Eiffel Tower and the Louvre.</div>
+                    <div><strong>New York:</strong> The Big Apple, with Times Square and Central Park.</div>
+                    <div><strong>Tokyo:</strong> A fusion of tradition and futuristic wonders.</div>
+                </div>
+                <img src="city.webp" alt="City Highlights">
+            </section>
 
-    <section class="featured-destinations" id="destinations">
-        <h2>Top Destinations</h2>
-        <div class="destination-grid">
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $1,299</div>
-                    <div class="duration-tag">5 Days</div>
+            <section id="section3">
+                <h1>Natural Wonders</h1>
+                <div class="info-block">
+                    <div><strong>Grand Canyon, USA:</strong> Awe-inspiring views and hiking trails.</div>
+                    <div><strong>Great Barrier Reef, Australia:</strong> Explore underwater beauty.</div>
+                    <div><strong>Swiss Alps, Switzerland:</strong> Stunning mountain landscapes.</div>
                 </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>Paris, France</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.8)</span>
-                        </div>
-                    </div>
-                    <p>The city of love and lights, famous for its iconic Eiffel Tower and rich culture.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Direct flights available</span>
-                        <span><i class="fas fa-hotel"></i> 4-star hotel included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="#" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
+                <img src="natural-wonders.avif" alt="Natural Wonders">
+            </section>
 
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $1,599</div>
-                    <div class="duration-tag">7 Days</div>
+            <section id="section4">
+                <h1>Hidden Gems</h1>
+                <div class="info-block">
+                    <div><strong>Chefchaouen, Morocco:</strong> A stunning blue city in the Rif Mountains.</div>
+                    <div><strong>Hallstatt, Austria:</strong> A picturesque lakeside village.</div>
+                    <div><strong>Uyuni Salt Flats, Bolivia:</strong> A surreal, mirror-like landscape.</div>
                 </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>Tokyo, Japan</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <span>(4.5)</span>
-                        </div>
-                    </div>
-                    <p>A fascinating blend of modern technology and ancient traditions.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Multiple stops</span>
-                        <span><i class="fas fa-hotel"></i> 5-star resort included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="#" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
+                <img src="hidden-gems.png" alt="Hidden Gems">
+            </section>
 
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1513415756790-2491ba3f42d6?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $999</div>
-                    <div class="duration-tag">6 Days</div>
-                </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>Bali, Indonesia</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.9)</span>
-                        </div>
-                    </div>
-                    <p>A tropical paradise with beautiful beaches, temples, and vibrant culture.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Direct flights available</span>
-                        <span><i class="fas fa-hotel"></i> Luxury villa included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="#" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1523428388562-1a192a91169c?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $1,799</div>
-                    <div class="duration-tag">5 Days</div>
-                </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>New York, USA</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.7)</span>
-                        </div>
-                    </div>
-                    <p>The city that never sleeps, offering endless entertainment and iconic landmarks.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Direct flights available</span>
-                        <span><i class="fas fa-hotel"></i> 4-star hotel included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="#" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1547981609-4fa4d9d-survive?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $2,199</div>
-                    <div class="duration-tag">8 Days</div>
-                </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>Sydney, Australia</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.6)</span>
-                        </div>
-                    </div>
-                    <p>Vibrant coastal city with iconic landmarks and beautiful beaches.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Direct flights available</span>
-                        <span><i class="fas fa-hotel"></i> 5-star resort included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="#" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1516690561799-46d8f7c167f0?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $2,499</div>
-                    <div class="duration-tag">7 Days</div>
-                </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>Maldives</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.9)</span>
-                        </div>
-                    </div>
-                    <p>Luxurious island paradise in the Indian Ocean with crystal-clear waters.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Direct flights available</span>
-                        <span><i class="fas fa-hotel"></i> Overwater bungalow included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="#" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="travel-tips">
-        <div class="container">
-            <h2>Planning Your Perfect Trip?</h2>
-            <p>Get expert travel tips, packing guides, and destination insights</p>
-            <a href="blog.html" class="cta-btn">Read Travel Tips</a>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>About Explore World</h3>
-                    <p>We are passionate about creating unforgettable travel experiences and helping you discover the world's most incredible destinations.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
+            <section id="section5">
+                <h1>Travel Tips</h1>
+                <div class="info-block">
+                    <p>Make your travels smoother with these tips:</p>
                     <ul>
-                        <li><a href="#">Popular Destinations</a></li>
-                        <li><a href="#">Travel Guides</a></li>
-                        <li><a href="#">Travel Insurance</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li>Plan ahead but leave room for spontaneity.</li>
+                        <li>Learn a few phrases of the local language.</li>
+                        <li>Always have travel insurance.</li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, City, Country</li>
-                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
-                        <li><i class="fas fa-envelope"></i> info@exploreworld.com</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Newsletter</h3>
-                    <form class="footer-newsletter">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Explore World. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Sitemap</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+               
+            </section>
 
-    <script src="scripts.js"></script>
+            <footer class="links">
+                <a href="https://www.nationalgeographic.com/travel" target="_blank">National Geographic</a>
+                <a href="https://www.travelandleisure.com" target="_blank">Travel + Leisure</a>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

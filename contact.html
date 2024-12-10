@@ -3,161 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Explore World - Get in Touch</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-top">
-            <div class="contact-info">
-                <span><i class="fas fa-phone"></i> +1 234 567 890</span>
-                <span><i class="fas fa-envelope"></i> info@exploreworld.com</span>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
+    <nav class="navbar">
+        <a href="index.html" >Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <aside class="aside">
+                <a href="#section1">Contact Details</a>
+                <a href="#section2">Our Locations</a>
+                <a href="#section3">Customer Support</a>
+                <a href="#section4">Feedback</a>
+                <a href="#section5">FAQs</a>
+            </aside>
         </div>
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="Explore World Logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <button class="book-now-btn" onclick="window.location.href='destinations.html'">Book Now</button>
-        </nav>
-    </header>
 
-    <section class="blog-hero">
-        <div class="hero-content ">
-            <h1>Get in Touch with Explore World</h1>
-            <p>We're here to help you plan your next adventure</p>
-        </div>
-    </section>
-
-    <section class="contact-sections">
-        <div class="contact-form">
-            <h2>Send Us a Message</h2>
-            <p>Have a question, suggestion, or just want to say hello? We'd love to hear from you!</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="tel" placeholder="Your Phone (Optional)">
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-        <div class="contact-info2">
-            <div class="contact-details">
-                <h3>Contact Information</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City, World</p>
-                <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
-                <p><i class="fas fa-envelope"></i> support@exploreworld.com</p>
-                <p><i class="fas fa-clock"></i> Mon-Fri: 9 AM - 6 PM (GMT)</p>
-            </div>
-            <div class="social-contact">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="map-section">
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a47df06b185%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1623164983123!5m2!1sen!2sus" 
-                width="100%" 
-                height="450" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
-    </section>
-
-    <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <p>Find quick answers to common questions about Explore World</p>
-        <div class="faq-grid">
-            <div class="faq-card">
-                <h3>How do I book a trip?</h3>
-                <p>You can book trips directly through our website or contact our support team for personalized assistance.</p>
-            </div>
-            <div class="faq-card">
-                <h3>What destinations do you cover?</h3>
-                <p>We offer travel experiences across six continents, with a focus on unique and immersive destinations.</p>
-            </div>
-            <div class="faq-card">
-                <h3>Do you offer travel insurance?</h3>
-                <p>Yes, we provide comprehensive travel insurance options to ensure your peace of mind during your journey.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>About Explore World</h3>
-                    <p>We are passionate about creating unforgettable travel experiences and helping you discover the world's most incredible destinations.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+        <div class="right">
+            <section id="section1">
+                <h1>Contact Details</h1>
+                <div class="info-block">
+                    <div><strong>Email:</strong> contact@travelwithus.com</div>
+                    <div><strong>Phone:</strong> +123 456 7890</div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Popular Destinations</a></li>
-                        <li><a href="#">Travel Guides</a></li>
-                        <li><a href="#">Travel Insurance</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, City, Country</li>
-                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
-                        <li><i class="fas fa-envelope"></i> info@exploreworld.com</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Newsletter</h3>
-                    <form class="footer-newsletter">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <div class="payment-methods">
-                        <i class="fab fa-cc-visa"></i>
-                        <i class="fab fa-cc-mastercard"></i>
-                        <i class="fab fa-cc-amex"></i>
-                        <i class="fab fa-cc-paypal"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Explore World. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Sitemap</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+            </section>
 
-    <script src="scripts.js"></script>
+            <section id="section2">
+                <h1>Our Locations</h1>
+                <div class="info-block">
+                    <div><strong>Head Office:</strong> 123 Travel Street, Adventure City</div>
+                    <div><strong>Branch Office:</strong> 45 Explorer Avenue, Wanderlust Town</div>
+                </div>
+            </section>
+
+            <section id="section3">
+                <h1>Customer Support</h1>
+                <p>Our customer support team is available 24/7 to assist you with any inquiries or issues.</p>
+            </section>
+
+            <section id="section4">
+                <h1>Feedback</h1>
+                <p>Your feedback helps us improve! Please let us know about your experience with "Travel With Us."</p>
+                <form class="contact-form" action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <section id="section5">
+                <h1>FAQs</h1>
+                <div class="info-block">
+                    <div><strong>Q:</strong> What is your cancellation policy?</div>
+                    <div><strong>A:</strong> You can cancel up to 48 hours before your trip for a full refund.</div>
+                </div>
+                <img src="faq.jpg" alt="FAQs">
+            </section>
+
+            <footer class="links">
+                <a href="https://www.expedia.com" target="_blank">Expedia</a>
+                <a href="https://www.skyscanner.net" target="_blank">Skyscanner</a>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

@@ -3,456 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore the World</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Travel With Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-top">
-            <div class="contact-info">
-                <span><i class="fas fa-phone"></i> +1 234 567 890</span>
-                <span><i class="fas fa-envelope"></i> info@exploreworld.com</span>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="Explore World Logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button class="book-now-btn" onclick="window.location.href='destinations.html'">Book Now</button>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Explore the World with Us</h1>
-            <p>Your go-to source for discovering amazing travel destinations and tips.</p>
-            <a href="destinations.html" class="cta-btn">Explore Destinations</a>
-        </div>
-    </section>
-
-    <section class="featured-destinations">
-        <h2>Popular Destinations</h2>
+    <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
         
-        <div class="filter-bar">
-            <div class="search-box">
-                <input type="text" placeholder="Search destinations...">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="filter-options">
-                <select class="price-filter">
-                    <option value="">Price Range</option>
-                    <option value="0-1000">$0 - $1,000</option>
-                    <option value="1000-2000">$1,000 - $2,000</option>
-                    <option value="2000+">$2,000+</option>
-                </select>
-                <select class="duration-filter">
-                    <option value="">Duration</option>
-                    <option value="1-3">1-3 Days</option>
-                    <option value="4-7">4-7 Days</option>
-                    <option value="7+">7+ Days</option>
-                </select>
-                <select class="rating-filter">
-                    <option value="">Rating</option>
-                    <option value="5">5 Stars</option>
-                    <option value="4">4+ Stars</option>
-                    <option value="3">3+ Stars</option>
-                </select>
-            </div>
+        <div class="left">
+            <aside class="aside">
+                <a href="#section1">Welcome</a>
+                <a href="#section2">Popular Packages</a>
+                <a href="#section3">Our Promise</a>
+                <a href="#section4">Testimonials</a>
+                <a href="#section5">FAQs</a>
+            </aside>
         </div>
 
-        <div class="destination-grid">
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $1,299</div>
-                    <div class="duration-tag">5 Days</div>
-                </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>Paris, France</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.8)</span>
-                        </div>
-                    </div>
-                    <p>The city of love and lights, famous for its iconic Eiffel Tower and rich culture.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Direct flights available</span>
-                        <span><i class="fas fa-hotel"></i> 4-star hotel included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="destinations.html" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1533050487297-49c2f2462a51?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $1,599</div>
-                    <div class="duration-tag">7 Days</div>
-                </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>Bali, Indonesia</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <span>(4.5)</span>
-                        </div>
-                    </div>
-                    <p>A tropical paradise with beautiful beaches, temples, and vibrant culture.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Multiple stops</span>
-                        <span><i class="fas fa-hotel"></i> 5-star resort included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="destinations.html" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1609924211018-5526c55bad5b?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $1,899</div>
-                    <div class="duration-tag">6 Days</div>
-                </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>Santorini, Greece</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.9)</span>
-                        </div>
-                    </div>
-                    <p>Stunning white architecture and breathtaking Mediterranean views.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Direct flights available</span>
-                        <span><i class="fas fa-hotel"></i> Luxury villa included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="destinations.html" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="destination-card">
-                <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1562973207-49c2f2462a51?w=600')">
-                    <div class="destination-overlay"></div>
-                    <div class="price-tag">From $2,199</div>
-                    <div class="duration-tag">8 Days</div>
-                </div>
-                <div class="destination-info">
-                    <div class="destination-header">
-                        <h3>Tokyo, Japan</h3>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.7)</span>
-                        </div>
-                    </div>
-                    <p>A fascinating blend of modern technology and ancient traditions.</p>
-                    <div class="destination-features">
-                        <span><i class="fas fa-plane"></i> Direct flights available</span>
-                        <span><i class="fas fa-hotel"></i> 4-star hotel included</span>
-                    </div>
-                    <div class="destination-footer">
-                        <a href="destinations.html" class="destination-btn">View Details</a>
-                        <button class="route-btn" title="View Route"><i class="fas fa-route"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="popular-tips">
-        <div class="section-header">
-            <h2>Popular Travel Tips</h2>
-            <p class="section-subtitle">Expert advice to enhance your travel experience</p>
-        </div>
-        
-        <div class="tips-grid">
-            <div class="tip-card">
-                <div class="tip-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="tip-content">
-                    <h3>Essential Travel Apps</h3>
-                    <p>Must-have applications for navigation, translation, and local recommendations.</p>
-                    <ul class="tip-features">
-                        <li><i class="fas fa-check"></i> Offline maps</li>
-                        <li><i class="fas fa-check"></i> Language translation</li>
-                        <li><i class="fas fa-check"></i> Local transport guides</li>
-                    </ul>
-                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="tip-card">
-                <div class="tip-icon">
-                    <i class="fas fa-suitcase"></i>
-                </div>
-                <div class="tip-content">
-                    <h3>Smart Packing Tips</h3>
-                    <p>Expert packing strategies to maximize space and prepare for any situation.</p>
-                    <ul class="tip-features">
-                        <li><i class="fas fa-check"></i> Rolling vs folding</li>
-                        <li><i class="fas fa-check"></i> Essential checklist</li>
-                        <li><i class="fas fa-check"></i> Weight distribution</li>
-                    </ul>
-                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="tip-card">
-                <div class="tip-icon">
-                    <i class="fas fa-piggy-bank"></i>
-                </div>
-                <div class="tip-content">
-                    <h3>Budget Travel Hacks</h3>
-                    <p>Smart strategies to save money while maximizing your travel experiences.</p>
-                    <ul class="tip-features">
-                        <li><i class="fas fa-check"></i> Off-season deals</li>
-                        <li><i class="fas fa-check"></i> Local dining tips</li>
-                        <li><i class="fas fa-check"></i> Free attractions</li>
-                    </ul>
-                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="tip-card">
-                <div class="tip-icon">
-                    <i class="fas fa-camera"></i>
-                </div>
-                <div class="tip-content">
-                    <h3>Photography Guide</h3>
-                    <p>Capture stunning travel memories with professional photography tips.</p>
-                    <ul class="tip-features">
-                        <li><i class="fas fa-check"></i> Best photo spots</li>
-                        <li><i class="fas fa-check"></i> Lighting techniques</li>
-                        <li><i class="fas fa-check"></i> Equipment tips</li>
-                    </ul>
-                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="tips-footer">
-            <a href="#" class="view-all-tips">View All Travel Tips <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-    </section>
-
-    <section class="about-us">
-        <div class="about-content">
-            <div class="about-text">
+        <div class="right">
+            <section id="section1">
+                <h1>Welcome to Travel With Us</h1>
+                <p>
+                    At <strong>"Travel With Us,"</strong> we specialize in crafting unforgettable travel experiences 
+                    designed to captivate your heart, ignite your soul, and create memories that last a lifetime. Whether you're dreaming of tranquil beaches, vibrant cities, or awe-inspiring natural wonders, we have something special just for you.
+                </p>
+                <p>
+                    We pride ourselves on our ability to transform your travel aspirations into reality. With our team of passionate travel experts, we ensure that every journey is meticulously planned and tailored to your unique preferences. From the moment you book with us to the moment you return home, our mission is to make your travel seamless, stress-free, and filled with joy.
+                </p>
                 <h2>Why Choose Us?</h2>
-                <p class="subtitle">Creating Unforgettable Travel Experiences Since 2010</p>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <i class="fas fa-globe-americas"></i>
-                        <h3>Global Expertise</h3>
-                        <p>Local insights and worldwide connections for authentic experiences.</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Safe Travel</h3>
-                        <p>Your safety is our top priority with 24/7 support and insurance.</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-dollar-sign"></i>
-                        <h3>Best Value</h3>
-                        <p>Competitive prices and exclusive deals for unforgettable journeys.</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-heart"></i>
-                        <h3>Tailored Experience</h3>
-                        <p>Customized itineraries to match your travel style and preferences.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800" alt="Travel Experience">
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <h2>What Our Travelers Say</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial-card">
-                <div class="testimonial-image">
-                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
-                </div>
-                <div class="testimonial-content">
-                    <p>"The best travel experience ever! The team went above and beyond to make our trip to Bali unforgettable."</p>
-                    <div class="testimonial-info">
-                        <h4>Sarah Johnson</h4>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- More testimonial cards -->
-        </div>
-    </section>
-
-    <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-grid">
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>How do I book a trip?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Booking is easy! Simply browse our destinations, select your preferred package, and click the "Book Now" button. Follow the steps to customize your trip and complete the booking.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>What's included in the package?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Our packages typically include flights, accommodation, transfers, and selected activities. Each package details what's included in the "What's Included" section.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Can I customize my trip?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Yes! We offer customization options for all our packages. Contact our travel experts to tailor your trip according to your preferences.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>What's your cancellation policy?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>We offer flexible cancellation policies depending on the package. Most trips can be cancelled up to 30 days before departure for a full refund.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to Start Your Adventure?</h2>
-            <p>Get exclusive deals and travel updates straight to your inbox!</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit" class="cta-btn">Subscribe Now</button>
-            </form>
-            <div class="cta-features">
-                <span><i class="fas fa-check-circle"></i> Exclusive Deals</span>
-                <span><i class="fas fa-check-circle"></i> Travel Tips</span>
-                <span><i class="fas fa-check-circle"></i> Destination Guides</span>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Explore World</h3>
-                <p>We are passionate about creating unforgettable travel experiences and helping you discover the world's most incredible destinations.</p>
                 <ul>
-                    <li>Trusted by thousands of travelers</li>
-                    <li>Expert travel advice</li>
-                    <li>Personalized trip planning</li>
+                    <li><strong>Personalized Travel Itineraries:</strong> We design customized travel packages to fit your lifestyle, preferences, and budget.</li>
+                    <li><strong>Expert Knowledge:</strong> With years of experience and partnerships worldwide, we offer insider tips and hidden gems you won't find elsewhere.</li>
+                    <li><strong>24/7 Support:</strong> Our dedicated support team is with you every step of the way, ensuring your journey is worry-free.</li>
+                    <li><strong>Unmatched Value:</strong> We combine luxury and affordability, providing you with exceptional travel deals.</li>
                 </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Popular Destinations</a></li>
-                    <li><a href="#">Travel Guides</a></li>
-                    <li><a href="#">Travel Insurance</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <ul class="contact-info">
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, City, Country</li>
-                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
-                    <li><i class="fas fa-envelope"></i> info@exploreworld.com</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Newsletter</h3>
-                <form class="footer-newsletter">
-                    <input type="email" placeholder="Your email address">
-                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                </form>
-                <div class="payment-methods">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-amex"></i>
-                    <i class="fab fa-cc-paypal"></i>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Explore World. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Sitemap</a>
-            </div>
-        </div>
-    </footer>
+                <h2>Our Vision</h2>
+                <p>
+                    At "Travel With Us," we envision a world where travel becomes an opportunity to explore new horizons, embrace cultural diversity, and create cherished moments with loved ones. We aim to inspire wanderlust and foster connections with people and places worldwide.
+                </p>
+                <img src="welcome.webp" alt="Welcome to Travel With Us">
+            </section>
 
-    <script>
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                const icon = question.querySelector('i');
-                answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + 'px';
-                icon.classList.toggle('fa-chevron-up');
-            });
-        });
-    </script>
+            <section id="section2">
+                <h1>Popular Packages</h1>
+                <div class="info-block">
+                    <div><strong>European Highlights:</strong> Visit Paris, Rome, and Amsterdam over 10 days. From $2500.</div>
+                    <div><strong>Maldives Bliss:</strong> Luxurious beachside resorts for 7 days. From $1800.</div>
+                    <div><strong>Kenya Safari Adventure:</strong> 8 days exploring African wildlife. From $2200.</div>
+                    <div><strong>Tokyo Discovery:</strong> Immerse yourself in Japanese culture for 6 days. From $1900.</div>
+                </div>
+                </section>
+
+            <section id="section3">
+                <h1>Our Promise</h1>
+                <p>We promise a seamless travel experience, from booking to your journey's completion. Our team is dedicated to your satisfaction and comfort, ensuring a trip of a lifetime.</p>
+                <ul>
+                    <li>Expertly crafted itineraries.</li>
+                    <li>Affordable, all-inclusive packages.</li>
+                    <li>24/7 support during your travels.</li>
+                </ul>
+                <img src="package.webp" alt="Popular Packages">
+            </section>
+
+            <section id="section4">
+                <h1>Testimonials</h1>
+                <div class="info-block">
+                    <blockquote>"The best travel agency I've ever used! The European tour was amazing." – Sarah K.</blockquote>
+                    <blockquote>"Great customer service and wonderful destinations. Highly recommend!" – James R.</blockquote>
+                    <blockquote>"Maldives Bliss was a dream come true. Thank you for making it perfect!" – Emily T.</blockquote>
+                </div>
+            </section>
+
+            <section id="section5">
+                <h1>FAQs</h1>
+                <div class="info-block">
+                    <div><strong>Q:</strong> Can I customize my travel package?</div>
+                    <div><strong>A:</strong> Yes! We offer fully customizable packages to suit your needs.</div>
+                    <div><strong>Q:</strong> What payment methods do you accept?</div>
+                    <div><strong>A:</strong> We accept all major credit cards, bank transfers, and online payment options.</div>
+                </div>
+                <img src="faq.jpg" alt="FAQs">
+            </section>
+
+            <footer class="links">
+                <a href="https://www.lonelyplanet.com" target="_blank">Lonely Planet</a>
+                <a href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
